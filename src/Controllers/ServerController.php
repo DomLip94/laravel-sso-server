@@ -1,10 +1,10 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Controllers;
+namespace Muteg\LaravelSSOServer\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use andcarpi\LaravelSSOServer\LaravelSSOServer;
+use Muteg\LaravelSSOServer\LaravelSSOServer;
 
 class ServerController extends BaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Controllers;
+namespace Muteg\LaravelSSOServer\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;

@@ -1,6 +1,6 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Models;
+namespace Muteg\LaravelSSOServer\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Permission\Traits\HasPermissions;

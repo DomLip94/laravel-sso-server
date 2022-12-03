@@ -1,6 +1,6 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Commands;
+namespace Muteg\LaravelSSOServer\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

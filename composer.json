@@ -14,7 +14,7 @@
       {
         "name": "Anderson Carpi",
         "email": "kustelac@yahoo.com.br",
-        "homepage": "https://github.com/andcarpi",
+        "homepage": "https://github.com/Muteg",
         "role": "Developer"
       },
       {
@@ -33,13 +33,13 @@
     },
     "autoload": {
       "psr-4": {
-        "andcarpi\\LaravelSSOServer\\": "src/"
+        "Muteg\\LaravelSSOServer\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-            "andcarpi\\LaravelSSOServer\\SSOServiceProvider"
+            "Muteg\\LaravelSSOServer\\SSOServiceProvider"
         ]
       }
     }

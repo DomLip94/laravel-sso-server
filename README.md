@@ -32,7 +32,7 @@ $ composer require zefy/laravel-sso
 
 Copy config file to Laravel project `config/` folder.
 ```shell
-$ php artisan vendor:publish --provider="andcarpi\LaravelSSOServer\SSOServiceProvider"
+$ php artisan vendor:publish --provider="Muteg\LaravelSSOServer\SSOServiceProvider"
 ```
 
 
@@ -69,7 +69,7 @@ $ composer require zefy/laravel-sso
 
 Copy config file to Laravel project `config/` folder.
 ```shell
-$ php artisan vendor:publish --provider="andcarpi\LaravelSSOServer\SSOServiceProvider"
+$ php artisan vendor:publish --provider="Muteg\LaravelSSOServer\SSOServiceProvider"
 ```
 
 
@@ -88,12 +88,12 @@ SSO_BROKER_SECRET=
 
 
 
-Edit your `app/Http/Kernel.php` by adding `\andcarpi\LaravelSSOServer\Middleware\SSOAutoLogin::class` middleware to `web` middleware group. It should look like this:
+Edit your `app/Http/Kernel.php` by adding `\Muteg\LaravelSSOServer\Middleware\SSOAutoLogin::class` middleware to `web` middleware group. It should look like this:
 ```php
 protected $middlewareGroups = [
         'web' => [
             ...
-            \andcarpi\LaravelSSOServer\Middleware\SSOAutoLogin::class,
+            \Muteg\LaravelSSOServer\Middleware\SSOAutoLogin::class,
         ],
 
         'api' => [
@@ -108,7 +108,7 @@ Last but not least, you need to edit `app/Http/Controllers/Auth/LoginController.
 ```php
 protected function attemptLogin(Request $request)
 {
-    $broker = new \andcarpi\LaravelSSOServer\LaravelSSOBroker;
+    $broker = new \Muteg\LaravelSSOServer\LaravelSSOBroker;
     
     $credentials = $this->credentials($request);
     return $broker->login($credentials[$this->username()], $credentials['password']);
@@ -116,7 +116,7 @@ protected function attemptLogin(Request $request)
 
 public function logout(Request $request)
 {
-    $broker = new \andcarpi\LaravelSSOServer\LaravelSSOBroker;
+    $broker = new \Muteg\LaravelSSOServer\LaravelSSOBroker;
     
     $broker->logout();
     

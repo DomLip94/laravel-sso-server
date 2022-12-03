@@ -5,11 +5,11 @@
  */
 
 Route::middleware(['api', \Illuminate\Session\Middleware\StartSession::class])->prefix('api/sso')->group(function () {
-    Route::post('login', 'andcarpi\LaravelSSOServer\Controllers\ServerController@login');
-    Route::post('logout', 'andcarpi\LaravelSSOServer\Controllers\ServerController@logout');
-    Route::get('attach', 'andcarpi\LaravelSSOServer\Controllers\ServerController@attach');
-    Route::get('userInfo', 'andcarpi\LaravelSSOServer\Controllers\ServerController@userInfo');
+    Route::post('login', 'Muteg\LaravelSSOServer\Controllers\ServerController@login');
+    Route::post('logout', 'Muteg\LaravelSSOServer\Controllers\ServerController@logout');
+    Route::get('attach', 'Muteg\LaravelSSOServer\Controllers\ServerController@attach');
+    Route::get('userInfo', 'Muteg\LaravelSSOServer\Controllers\ServerController@userInfo');
 });
 
-Route::get('login', 'andcarpi\LaravelSSOServer\Controllers\LoginController@showLoginForm')->name('login');
-Route::post('login', 'andcarpi\LaravelSSOServer\Controllers\LoginController@login');
+Route::get('login', 'Muteg\LaravelSSOServer\Controllers\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Muteg\LaravelSSOServer\Controllers\LoginController@login');

@@ -1,6 +1,6 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Resources;
+namespace Muteg\LaravelSSOServer\Resources;
 
 use Illuminate\Http\Resources\Json\Resource;
 

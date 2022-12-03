@@ -1,9 +1,9 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer;
+namespace Muteg\LaravelSSOServer;
 
 use Illuminate\Support\ServiceProvider;
-use andcarpi\LaravelSSOServer\Commands;
+use Muteg\LaravelSSOServer\Commands;
 
 class SSOServiceProvider extends ServiceProvider
 {
@@ -43,7 +43,7 @@ class SSOServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('andcarpi\LaravelSSOServer\Controllers\ServerController');
+        $this->app->make('Muteg\LaravelSSOServer\Controllers\ServerController');
     }
 
     /**

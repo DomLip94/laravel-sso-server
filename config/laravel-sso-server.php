@@ -26,9 +26,9 @@ return [
      |--------------------------------------------------------------------------
      */
 
-    // Table used in andcarpi\LaravelSSOServer\Models\Broker model
+    // Table used in Muteg\LaravelSSOServer\Models\Broker model
     'brokersTable' => 'brokers',
-    'brokersModel' => andcarpi\LaravelSSOServer\Models\Broker::class,
+    'brokersModel' => Muteg\LaravelSSOServer\Models\Broker::class,
 
     /*
      |--------------------------------------------------------------------------

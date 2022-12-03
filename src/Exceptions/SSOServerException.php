@@ -1,6 +1,6 @@
 <?php
 
-namespace andcarpi\LaravelSSOServer\Exceptions;
+namespace Muteg\LaravelSSOServer\Exceptions;
 
 use Exception;
 
